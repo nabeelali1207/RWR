@@ -1,0 +1,13 @@
+/.settings
+/AutoRun
+/Debug
+/extras
+/input
+/output
+/Release
+.cproject
+.project
+autoDebug.sh
+autoRun.sh
+BASR_Project
+log.txt

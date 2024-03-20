@@ -1,0 +1,8 @@
+
+copy the project in eclipse and paste at the same workspace with changed project name
+
+close the old project
+
+goto properties of the new project
+
+>>C/C++ Build Settings >> Refresh Policy >> change to this project not the old one otherwise building the project wont be possible

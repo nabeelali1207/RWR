@@ -1,0 +1,13 @@
+
+18June2019---gmd
+Added .hex file for clustered data
+Matlab can parse the data for labels assigned to each clustered PDW
+
+solves:
+0.00a			data used for clustering was being mapped in range [-1,1] at two points
+
+
+issues:
+ISSUEID:		Details
+0.01a			pri analysis does not work crashes unpredictably
+					"std::length_error ,what():  vector::_M_default_append"

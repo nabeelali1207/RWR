@@ -1,0 +1,50 @@
+2023.02.22
+
+K-Means
+	Input Parameters
+		k = number of clusters
+	Algorithm
+		(https://www.javatpoint.com/k-means-clustering-algorithm-in-machine-learning)
+		1. Select the number K to decide the number of clusters.
+		2. Select random K points or centroids. (It can be other from the input dataset).
+		3. Assign each data point to their closest centroid, which will form the predefined K clusters.
+		4. Calculate the variance and place a new centroid of each cluster.
+		5. Repeat the third steps, which means reassign each datapoint to the new closest centroid of each cluster.
+		6. If any reassignment occurs, then go to step-4 else go to FINISH.
+		7. The model is ready.
+
+K-Nearest Neighbor (K-NN)
+	Input Parameters
+		k = number of neighbors to consider
+	Algorithm
+		(https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning)
+		1. Select the number K of the neighbors
+		2. Calculate the Euclidean distance of K number of neighbors
+		3. Take the K nearest neighbors as per the calculated Euclidean distance.
+		4. Among these k neighbors, count the number of the data points in each category.
+		5. Assign the new data points to that category for which the number of the neighbor is maximum.
+		6. Our model is ready.
+
+DBSCAN
+	Input Parameters
+		epsilon = neighborhood around a data point i.e. if the distance between two points is lower or equal to epsilon then they are considered neighbors
+		minPts = minimum number of data points to define a cluster
+	Algorithm
+		1: (https://www.geeksforgeeks.org/dbscan-clustering-in-ml-density-based-clustering/)
+			
+			1. Find all the neighbor points within eps and identify the core points or visited with more than MinPts neighbors.
+			2. For each core point if it is not already assigned to a cluster, create a new cluster.
+			3. Find recursively all its density connected points and assign them to the same cluster as the core point. A point a and b are said to be density connected if there exist a point c which has a sufficient number of points in its neighbors and both the points a and b are within the eps distance. This is a chaining process. So, if b is neighbor of c, c is neighbor of d, d is neighbor of e, which in turn is neighbor of a implies that b is neighbor of a.
+			4. Iterate through the remaining unvisited points in the dataset. Those points that do not belong to any cluster are noise.
+		2: (ChatGPT)
+			1. Load your dataset into MATLAB and preprocess it as needed (e.g., normalization, standardization).
+			2. Choose your parameters for DBSCAN: epsilon and the minimum number of points required to form a cluster (minPts).
+			3. Calculate the pairwise distances between all data points in the dataset. MATLAB's built-in pdist function can be used for this.
+			4. Compute the epsilon-neighborhood of each data point. This can be done using MATLAB's built-in rangesearch function.
+			5. Identify the core points, which are the data points with at least minPts neighbors within epsilon distance.
+			6. Assign each core point to a cluster and expand the cluster by adding all points within the epsilon-neighborhood to the cluster. This can be done using a loop over the core points and their neighbors.
+			7. Identify the non-core points that are within the epsilon-neighborhood of a core point and assign them to the same cluster as the core point.
+			8. Assign all remaining points to noise.
+			9. Return the clusters and noise as output.
+
+

@@ -1,0 +1,7 @@
+23May2019 --gmd
+
+received project form sir hassan
+
+ISSUEID:		Details
+0.00a			clustering does not perform as required
+0.00b			pri analysis does not work

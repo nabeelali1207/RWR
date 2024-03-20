@@ -1,0 +1,12 @@
+2022.12.01
+	Joining
+2022.12
+	C/C++ Training: 
+		STL, Inheritence, etc.
+2023.01 - 2023.02
+	BASR: 
+		FAT demo preperation by generation and testing of cases
+2023.02.22 - 
+	BASR:
+		Understanding K-Means, K-NN and DBSCAN clustering. Implementing K-Means and DBSCAN in MATLAB
+		
